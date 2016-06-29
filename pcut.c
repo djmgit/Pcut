@@ -10,11 +10,11 @@ int main(int argc,char **argv)
  char line[1000];
 
  int start,end,s=0;
- start=atoi(argv[1]);
- end=atoi(argv[2]);
- fw=fopen(argv[3],"w");
+ start=atoi(argv[2]);
+ end=atoi(argv[3]);
+ fw=fopen(argv[4],"w");
 
- fp=fopen("pcut_print.prt","r");
+ fp=fopen(argv[1],"r");
  while(fgets(line,sizeof line,fp) != NULL){
  	
  	for(int i=0;i<strlen(line);i++){
