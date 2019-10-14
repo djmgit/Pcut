@@ -14,6 +14,8 @@ int main(int argc,char **argv)
  end=atoi(argv[3]);
  fw=fopen(argv[4],"w");
 
+ start -= 1;
+
  fp=fopen(argv[1],"r");
  while(fgets(line,sizeof line,fp) != NULL){
  	
@@ -29,7 +31,7 @@ int main(int argc,char **argv)
  		fclose(fp);
  		break;
  	}
- 	if (s>=start-1){
+	if (s>=start){
  		fprintf(fw,"%s\n",line);
  	}
  	
