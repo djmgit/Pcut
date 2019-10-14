@@ -6,7 +6,7 @@ An utility script to cut print (.prt) file from a given page number to another g
 
 **Compilation**
 
-gcc pcut.c -o pcut
+``` gcc pcut.c -o pcut ```
 
 **Run Pcut**
 
