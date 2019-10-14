@@ -12,5 +12,4 @@ gcc pcut.c -o pcut
 
 ```
 ./pcut [input_file_name] [start_page_no] [end_page_no] [output_file_name] 
-
 ```
